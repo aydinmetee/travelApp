@@ -10,6 +10,11 @@ import { LoginGuard } from './pages/login/login.guard';
 import { HttpClientModule } from '@angular/common/http';
 import { GMapModule } from 'primeng/gmap';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegisterComponent } from './pages/register/register.component';
+import {DropdownModule} from 'primeng/dropdown';
 
 
 @NgModule({
@@ -17,7 +22,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     AppComponent,
       NavbarComponent,
       LoginComponent,
-      DashboardComponent
+      DashboardComponent,
+      RegisterComponent
    ],
   imports: [
     BrowserModule,
@@ -26,7 +32,11 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     FormsModule,
     CommonModule,
     HttpClientModule,
-    GMapModule
+    GMapModule,
+    DialogModule,
+    ButtonModule,
+    BrowserAnimationsModule,
+    DropdownModule
   ],
   providers: [LoginGuard],
   bootstrap: [AppComponent]

@@ -20,7 +20,6 @@ ngOnInit(): void {
 login(user:User,users:User[]):boolean{
   for(const usr of users){
     if(usr.username==user.username && usr.password==user.password){
-      alert("Başarılı.");
       this.loggedIn=true;
       return true;
     }

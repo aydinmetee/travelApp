@@ -1,8 +1,37 @@
 {
-    "users":[
-        {
-            "username":"admin",
-            "password":"12345"
-        }
-    ]
+  "users": [
+    {
+      "username": "admin",
+      "password": "12345",
+      "email": "test@gmail.com",
+      "bmodel": {
+        "name": "Honda",
+        "code": "HND"
+      },
+      "location": "İstanbul",
+      "id": 1
+    },
+    {
+      "username": "asdasd",
+      "password": "asdasda",
+      "email": "asdasdas",
+      "bmodel": {
+        "name": "Yamaha",
+        "code": "YMH"
+      },
+      "location": "asdasd",
+      "id": 2
+    },
+    {
+      "username": "Test",
+      "password": "admin",
+      "email": "testuser@example.com",
+      "bmodel": {
+        "name": "Harley Davidson",
+        "code": "HLD"
+      },
+      "location": "Holland",
+      "id": 3
+    }
+  ]
 }

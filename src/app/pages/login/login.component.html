@@ -8,11 +8,13 @@
   <div class="form-label-group">
     <input type="text" id="inputUsername" class="form-control" placeholder="Username" formControlName="username" required autofocus>
     <label for="inputUsername">Username</label>
+    <app-error-message [control]="loginForm.get('username')"></app-error-message>
   </div>
 
   <div class="form-label-group">
     <input type="password" id="inputPassword" formControlName="password" class="form-control" placeholder="Password" required>
     <label for="inputPassword">Password</label>
+    <app-error-message [control]="loginForm.get('password')"></app-error-message>
   </div>
 
   <button class="btn btn-lg btn-primary btn-block" type="submit" routerLink="/dashboard" >Sign in</button>

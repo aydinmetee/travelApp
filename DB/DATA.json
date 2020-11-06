@@ -9,6 +9,11 @@
         "code": "HND"
       },
       "location": "İstanbul",
+      "myCrew": {
+        "cName": "ALS",
+        "cId": 5,
+        "cLeader": "Test"
+      },
       "id": 1
     },
     {
@@ -20,6 +25,11 @@
         "code": "YMH"
       },
       "location": "asdasd",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
       "id": 2
     },
     {
@@ -31,7 +41,92 @@
         "code": "HLD"
       },
       "location": "Holland",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
       "id": 3
+    },
+    {
+      "username": "Kayit1",
+      "password": "sifre1",
+      "email": "user@usertest.com",
+      "bmodel": {
+        "name": "Suzuki",
+        "code": "SZK"
+      },
+      "location": "Polonya",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
+      "id": 4
+    },
+    {
+      "username": "Berkcan",
+      "password": "berkcan",
+      "email": "bkutlusan@test.com",
+      "bmodel": {
+        "name": "Harley Davidson",
+        "code": "HLD"
+      },
+      "location": "Biga",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
+      "id": 5
+    },
+    {
+      "username": "TestUser2",
+      "password": "password",
+      "email": "tuser2@test.com",
+      "bmodel": {
+        "name": "Yamaha",
+        "code": "YMH"
+      },
+      "location": "Bursa",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
+      "id": 6
+    },
+    {
+      "username": "tst123",
+      "password": "tpwd123",
+      "email": "testag@tst.com",
+      "bmodel": {
+        "name": "Kawasaki",
+        "code": "KWS"
+      },
+      "location": "Nevada",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
+      "id": 7
+    },
+    {
+      "username": "asdasd",
+      "password": "asdasd",
+      "email": "asdas@asdasd.com",
+      "bmodel": {
+        "name": "Yamaha",
+        "code": "YMH"
+      },
+      "location": "asdasd",
+      "myCrew": {
+        "cName": "PPL",
+        "cId": 5,
+        "cLeader": "Test"
+      },
+      "id": 8
     }
   ]
 }

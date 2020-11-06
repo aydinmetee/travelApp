@@ -27,11 +27,22 @@ export class DataService {
     return this.http.get<User[]>(this.path + '/users');
   }
 
+  getUsersById(id:string): Observable<User> {
+    return this.http.get<User>(this.path + '/users/' + id);
+  }
+
   addUsers(user: User): Observable<User> {
     return this.http
       .post<User>(this.path + '/users', user, this.httpOptions)
       .pipe(catchError(this.handleError));
   }
+
+  getCrewMember() {
+    return this.http.get(this.path + '/users')
+                .toPromise()
+                .then(res => <User[]> res)
+                .then(data => { return data; });
+}
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {

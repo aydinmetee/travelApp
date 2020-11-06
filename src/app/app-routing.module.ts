@@ -1,3 +1,4 @@
+import { MycrewComponent } from './pages/mycrew/mycrew.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -9,6 +10,7 @@ import { MapsComponent } from './pages/maps/maps.component';
 const routes: Routes = [
   {path:'maps',component: MapsComponent, canActivate:[LoginGuard]},
   {path:'login',component:LoginComponent},
+  {path:'mycrew',component:MycrewComponent, canActivate:[LoginGuard]},
   {path:'register',component:RegisterComponent},
   {path:'dashboard',component:DashboardComponent,canActivate:[LoginGuard]},
   {path:'',redirectTo:'login',pathMatch:'full'}

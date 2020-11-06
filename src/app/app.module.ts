@@ -15,7 +15,9 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './pages/register/register.component';
 import {DropdownModule} from 'primeng/dropdown';
-
+import { ErrorMessageComponent } from './error-message/error-message.component';
+import { MycrewComponent } from './pages/mycrew/mycrew.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [	
@@ -23,7 +25,9 @@ import {DropdownModule} from 'primeng/dropdown';
       NavbarComponent,
       LoginComponent,
       DashboardComponent,
-      RegisterComponent
+      RegisterComponent,
+      ErrorMessageComponent,
+      MycrewComponent
    ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import {DropdownModule} from 'primeng/dropdown';
     DialogModule,
     ButtonModule,
     BrowserAnimationsModule,
-    DropdownModule
+    DropdownModule,
+    TableModule
   ],
   providers: [LoginGuard],
   bootstrap: [AppComponent]

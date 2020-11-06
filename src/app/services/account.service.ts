@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { User } from '../models/user';
 import { DataService } from './data.service';
 
+declare let alertify;
+
 @Injectable({
   providedIn: 'root'
 })
@@ -21,10 +23,13 @@ login(user:User,users:User[]):boolean{
   for(const usr of users){
     if(usr.username==user.username && usr.password==user.password){
       this.loggedIn=true;
+      localStorage.setItem("online",usr.id.toString());
+      console.log(localStorage.getItem("online"));
+      alertify.success("Giriş Başarılı. Yönlendiriliyorsunuz...")
       return true;
     }
   }
-  alert("Başarısız.");
+  alertify.error("Hatali giriş yaptınız.");
   return false;
 }
 

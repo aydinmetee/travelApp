@@ -1,3 +1,4 @@
+import { Crew } from './crew';
 import { Bike } from './bike';
 
 export class User{
@@ -7,4 +8,5 @@ export class User{
     email:String;
     bike:Bike;
     location:String;
+    myCrew:Crew=null;
 }

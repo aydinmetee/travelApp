@@ -1,3 +1,4 @@
+import { MapsComponent } from './pages/maps/maps.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,8 @@ import {DropdownModule} from 'primeng/dropdown';
 import { ErrorMessageComponent } from './error-message/error-message.component';
 import { MycrewComponent } from './pages/mycrew/mycrew.component';
 import { TableModule } from 'primeng/table';
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   declarations: [	
@@ -27,7 +30,8 @@ import { TableModule } from 'primeng/table';
       DashboardComponent,
       RegisterComponent,
       ErrorMessageComponent,
-      MycrewComponent
+      MycrewComponent,
+      MapsComponent
    ],
   imports: [
     BrowserModule,
@@ -41,7 +45,10 @@ import { TableModule } from 'primeng/table';
     ButtonModule,
     BrowserAnimationsModule,
     DropdownModule,
-    TableModule
+    TableModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyC1dAOr8AL0DEM-jzkq5VnnMQniMHqF77Y'
+    })
   ],
   providers: [LoginGuard],
   bootstrap: [AppComponent]

@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapsComponent implements OnInit {
  
+  
+  lat = 40.730610;
+  lng = -73.935242;
 
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
     
   }
   

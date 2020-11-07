@@ -128,5 +128,112 @@
       },
       "id": 8
     }
+  ],
+  "comments": [
+    {
+      "message": "Uygulamadan çok memnun kaldık.",
+      "rating": 4,
+      "author": {
+        "username": "admin",
+        "password": "12345",
+        "email": "test@gmail.com",
+        "bmodel": {
+          "name": "Honda",
+          "code": "HND"
+        },
+        "location": "İstanbul",
+        "myCrew": {
+          "cName": "ALS",
+          "cId": 5,
+          "cLeader": "Test"
+        },
+        "id": 1
+      },
+      "id": 4
+    },
+    {
+      "message": "Deneme Mesajidir.",
+      "rating": 4,
+      "author": {
+        "username": "Test",
+        "password": "admin",
+        "email": "testuser@example.com",
+        "bmodel": {
+          "name": "Harley Davidson",
+          "code": "HLD"
+        },
+        "location": "Holland",
+        "myCrew": {
+          "cName": "PPL",
+          "cId": 5,
+          "cLeader": "Test"
+        },
+        "id": 3
+      },
+      "id": 5
+    },
+    {
+      "message": "CommentTest-Username",
+      "rating": 1,
+      "author": {
+        "username": "Test",
+        "password": "admin",
+        "email": "testuser@example.com",
+        "bmodel": {
+          "name": "Harley Davidson",
+          "code": "HLD"
+        },
+        "location": "Holland",
+        "myCrew": {
+          "cName": "PPL",
+          "cId": 5,
+          "cLeader": "Test"
+        },
+        "id": 3
+      },
+      "id": 6
+    },
+    {
+      "message": "Username succesfull.",
+      "rating": 5,
+      "author": {
+        "username": "admin",
+        "password": "12345",
+        "email": "test@gmail.com",
+        "bmodel": {
+          "name": "Honda",
+          "code": "HND"
+        },
+        "location": "İstanbul",
+        "myCrew": {
+          "cName": "ALS",
+          "cId": 5,
+          "cLeader": "Test"
+        },
+        "id": 1
+      },
+      "id": 7
+    },
+    {
+      "message": "Long message test-> aaadasdas",
+      "rating": 5,
+      "author": {
+        "username": "admin",
+        "password": "12345",
+        "email": "test@gmail.com",
+        "bmodel": {
+          "name": "Honda",
+          "code": "HND"
+        },
+        "location": "İstanbul",
+        "myCrew": {
+          "cName": "ALS",
+          "cId": 5,
+          "cLeader": "Test"
+        },
+        "id": 1
+      },
+      "id": 8
+    }
   ]
 }

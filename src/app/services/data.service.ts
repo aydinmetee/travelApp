@@ -1,3 +1,4 @@
+import { Comment } from './../models/comment';
 import {
   HttpClient,
   HttpErrorResponse,
@@ -18,7 +19,7 @@ export class DataService {
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      Authorization: 'creater',
+      Authorization: 'creater'
     }),
   };
   constructor(private http: HttpClient) {}
@@ -27,7 +28,7 @@ export class DataService {
     return this.http.get<User[]>(this.path + '/users');
   }
 
-  getUsersById(id:string): Observable<User> {
+  getUsersById(id: string): Observable<User> {
     return this.http.get<User>(this.path + '/users/' + id);
   }
 
@@ -37,12 +38,24 @@ export class DataService {
       .pipe(catchError(this.handleError));
   }
 
+  getComments(): Observable<Comment[]> {
+    return this.http.get<Comment[]>(this.path + '/comments');
+  }
+
+  addComment(comment: Comment): Observable<Comment> {
+    return this.http
+      .post<Comment>(this.path + '/comments', comment, this.httpOptions);
+  }
+
   getCrewMember() {
-    return this.http.get(this.path + '/users')
-                .toPromise()
-                .then(res => <User[]> res)
-                .then(data => { return data; });
-}
+    return this.http
+      .get(this.path + '/users')
+      .toPromise()
+      .then((res) => <User[]>res)
+      .then((data) => {
+        return data;
+      });
+  }
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {

@@ -20,7 +20,9 @@ import { ErrorMessageComponent } from './error-message/error-message.component';
 import { MycrewComponent } from './pages/mycrew/mycrew.component';
 import { TableModule } from 'primeng/table';
 import { AgmCoreModule } from '@agm/core';
-
+import { CarouselModule } from 'primeng/carousel';
+import { RatingModule } from 'primeng/rating';
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [	
@@ -48,7 +50,10 @@ import { AgmCoreModule } from '@agm/core';
     TableModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyC1dAOr8AL0DEM-jzkq5VnnMQniMHqF77Y'
-    })
+    }),
+    CarouselModule,
+    RatingModule,
+    InputTextareaModule
   ],
   providers: [LoginGuard],
   bootstrap: [AppComponent]

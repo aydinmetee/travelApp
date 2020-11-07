@@ -24,6 +24,7 @@
     "alertifyjs": "^1.13.1",
     "bootstrap": "^4.5.3",
     "core-js": "3.6.5",
+    "font-awesome": "^4.7.0",
     "primeicons": "^4.0.0",
     "primeng": "^10.0.3",
     "rxjs": "~6.6.0",

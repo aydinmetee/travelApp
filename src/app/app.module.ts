@@ -49,7 +49,8 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     DropdownModule,
     TableModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC1dAOr8AL0DEM-jzkq5VnnMQniMHqF77Y'
+      apiKey: 'AIzaSyC1dAOr8AL0DEM-jzkq5VnnMQniMHqF77Y',
+      libraries: ['places']
     }),
     CarouselModule,
     RatingModule,

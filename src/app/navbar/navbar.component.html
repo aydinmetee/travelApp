@@ -5,9 +5,9 @@
     </a>
     <a class="py-2 d-none d-md-inline-block" routerLink="/maps">Maps</a>
     <a class="py-2 d-none d-md-inline-block" routerLink="/mycrew">My Crew</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Training</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="/trips">All Trips</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink='/mytrips'>My Trips</a>
     <a class="py-2 d-none d-md-inline-block" href="#">Account</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">My Travels</a>
     <a *ngIf="isLoggedIn()==false" class="py-2 d-none d-md-inline-block" routerLink="/login" >Login</a>
     <a *ngIf="isLoggedIn()==true" class="py-2 d-none d-md-inline-block" (click)="logOut()">Logout</a>
   </div>

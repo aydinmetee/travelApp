@@ -1,20 +1,49 @@
 <div class="container">
-  <h3 class="text-center">MAPS</h3>
+  <h3 class="text-center">MAP</h3>
 
-<div class="form-group">
-  <label>Enter address</label>
-  <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
-</div>
-
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+<!-- <div class="form-group">
+    <label>Enter address</label>
+    <input
+      type="text"
+      class="form-control"
+      (keydown.enter)="$event.preventDefault()"
+      placeholder="Search Nearest Location"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="off"
+      type="text"
+      #search
+    />
+  </div>
+-->
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
   </agm-map>
-
-
-  <h5>Address: {{address}}</h5>
-  <div>Latitude: {{lat}}</div>
-  <div>Longitude: {{lng}}</div>
   
+  <div class="row">
+    <section class="trip-form">
+      <h3 class="title">Organize New Trip</h3>
+      <form (ngSubmit)="cTrip()" [formGroup]="tripform" class="contact-form row">
+
+        <div class="form-field col-lg-6">
+          <input id="slocation" class="input-text js-input" type="text" formControlName="slocation" required>
+          <label class="label" for="slocation">Start Location</label>
+       </div>
+       <div class="form-field col-lg-6 ">
+          <input id="flocation" class="input-text js-input" type="text" formControlName="flocation" required>
+          <label class="label" for="flocation">Finish Location</label>
+       </div>
+
+       <div class="form-field col-lg-12">
+        <input type="date" class="input-text js-input" id="sDate" name="sDate"
+        [ngModel]="sDate | date:'dd-MM-yyyy'"  formControlName="sDate">
+        <label for="sDate" class="label">Start Date</label>
+       </div>
+
+       <div class="form-field col-lg-12">
+        <input class="submit-btn" type="submit" value="Let's Travel">
+     </div>
+        </form>
+    </section>
+  </div>
 </div>
-
-  

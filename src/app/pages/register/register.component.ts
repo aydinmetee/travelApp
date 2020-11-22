@@ -13,7 +13,6 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   kisi: User = null;
-  crew:Crew= new Crew("PPL",5,"Test");
   rForm: FormGroup;
   bikes: Bike[];
   selectedBike: string;
@@ -45,7 +44,7 @@ export class RegisterComponent implements OnInit {
 
   onSubmit() {
     this.kisi = Object.assign(this.rForm.value);
-    this.kisi.myCrew=this.crew;
+    this.kisi.myCrew=null;
     console.log(this.rForm.value);
     this.dataService.addUsers(this.kisi).subscribe();
     this.router.navigate(['login']);

@@ -24,6 +24,9 @@ login(user:User,users:User[]):boolean{
     if(usr.username==user.username && usr.password==user.password){
       this.loggedIn=true;
       localStorage.setItem("online",usr.id.toString());
+      if(usr.myCrew!=null){
+        localStorage.setItem("oncrew",usr.myCrew.id.toString());
+      }
       console.log(localStorage.getItem("online"));
       alertify.success("Giriş Başarılı. Yönlendiriliyorsunuz...")
       return true;

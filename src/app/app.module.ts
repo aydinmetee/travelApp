@@ -23,6 +23,9 @@ import { AgmCoreModule } from '@agm/core';
 import { CarouselModule } from 'primeng/carousel';
 import { RatingModule } from 'primeng/rating';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {CalendarModule} from 'primeng/calendar';
+import { TripsComponent } from './pages/trips/trips.component';
+import { MytripsComponent } from './pages/mytrips/mytrips.component';
 
 @NgModule({
   declarations: [	
@@ -33,7 +36,9 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
       RegisterComponent,
       ErrorMessageComponent,
       MycrewComponent,
-      MapsComponent
+      MapsComponent,
+      TripsComponent,
+      MytripsComponent
    ],
   imports: [
     BrowserModule,
@@ -54,7 +59,8 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     }),
     CarouselModule,
     RatingModule,
-    InputTextareaModule
+    InputTextareaModule,
+    CalendarModule
   ],
   providers: [LoginGuard],
   bootstrap: [AppComponent]

@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-6">
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card p-3">
+            <div class="d-flex align-items-center">
+            <div class="image"> <img src="assets/images/User01.png" class="rounded" width="155"> </div>
+            <div class="ml-3 w-100">
+                <h4 class="mb-0 mt-0">{{onlineUser.username}}</h4> <span>{{onlineUser.myCrew.cName}}</span>
+                <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                   Yapım Aşamasında...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Trip Rotate</th>
+                <th scope="col">Trip Date</th>
+                <th scope="col">Trip Assignee</th>
+                <th scope="col">Trip Participants</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let trip of trips; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>
+                  {{ trip.slocation }} -> {{trip.flocation}}
+                </td>
+                <td>{{ trip.sdate}}</td>
+                <td>{{ trip.assignee.username}}</td>
+                <td>
+                    {{ trip.participants.length}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </div>
+</div>

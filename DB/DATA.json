@@ -1,132 +1,126 @@
 {
   "users": [
     {
-      "username": "admin",
+      "username": "Admin",
       "password": "12345",
       "email": "test@gmail.com",
-      "bmodel": {
+      "bike": {
         "name": "Honda",
         "code": "HND"
       },
       "location": "İstanbul",
       "myCrew": {
-        "cName": "ALS",
-        "cId": 5,
-        "cLeader": "Test"
+        "cName": "Cehennem Melekleri",
+        "cCode": "CHM",
+        "cLeaderId": 1,
+        "id": 1
       },
       "id": 1
     },
     {
-      "username": "asdasd",
-      "password": "asdasda",
-      "email": "asdasdas",
-      "bmodel": {
+      "username": "Kerem",
+      "password": "krm123",
+      "email": "kerem@testuser.com",
+      "bike": {
         "name": "Yamaha",
         "code": "YMH"
       },
-      "location": "asdasd",
+      "location": "Karabük",
       "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
+        "cName": "Parlayan Yıldızlar",
+        "cCode": "PLY",
+        "cLeaderId": 2
       },
       "id": 2
     },
     {
-      "username": "Test",
-      "password": "admin",
-      "email": "testuser@example.com",
-      "bmodel": {
+      "username": "Berkcan",
+      "password": "brk123",
+      "email": "berkcan@testuser.com",
+      "bike": {
         "name": "Harley Davidson",
         "code": "HLD"
       },
-      "location": "Holland",
+      "location": "Bursa",
       "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
+        "cName": "Cehennem Melekleri",
+        "cCode": "CHM",
+        "cLeaderId": 1,
+        "id": 1
       },
       "id": 3
     },
     {
-      "username": "Kayit1",
-      "password": "sifre1",
-      "email": "user@usertest.com",
-      "bmodel": {
-        "name": "Suzuki",
-        "code": "SZK"
-      },
-      "location": "Polonya",
-      "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
-      },
-      "id": 4
-    },
-    {
-      "username": "Berkcan",
-      "password": "berkcan",
-      "email": "bkutlusan@test.com",
-      "bmodel": {
-        "name": "Harley Davidson",
-        "code": "HLD"
-      },
-      "location": "Biga",
-      "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
-      },
-      "id": 5
-    },
-    {
-      "username": "TestUser2",
-      "password": "password",
-      "email": "tuser2@test.com",
-      "bmodel": {
-        "name": "Yamaha",
-        "code": "YMH"
-      },
-      "location": "Bursa",
-      "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
-      },
-      "id": 6
-    },
-    {
-      "username": "tst123",
-      "password": "tpwd123",
-      "email": "testag@tst.com",
-      "bmodel": {
+      "username": "Yusufcan",
+      "password": "ysf123",
+      "email": "yusufcan@testuser.com",
+      "bike": {
         "name": "Kawasaki",
         "code": "KWS"
       },
-      "location": "Nevada",
-      "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
-      },
-      "id": 7
+      "location": "Kıbrıs",
+      "myCrew": null,
+      "id": 4
     },
     {
-      "username": "asdasd",
-      "password": "asdasd",
-      "email": "asdas@asdasd.com",
-      "bmodel": {
+      "username": "Ömer",
+      "password": "omr123",
+      "email": "omer@gmail.com",
+      "bike": {
         "name": "Yamaha",
         "code": "YMH"
       },
-      "location": "asdasd",
-      "myCrew": {
-        "cName": "PPL",
-        "cId": 5,
-        "cLeader": "Test"
+      "location": "İstanbul",
+      "myCrew": null,
+      "id": 5
+    },
+    {
+      "username": "Batuhan",
+      "password": "bthn123",
+      "email": "batuhan@testuser.com",
+      "bike": {
+        "name": "Yamaha",
+        "code": "YMH"
       },
-      "id": 8
+      "location": "Malatya",
+      "myCrew": null,
+      "id": 6
+    },
+    {
+      "username": "Yener",
+      "password": "ynr123",
+      "email": "yener@testuser.com",
+      "bike": {
+        "name": "Suzuki",
+        "code": "SZK"
+      },
+      "location": "İzmir",
+      "myCrew": {
+        "cName": "Dereboyu SK",
+        "cCode": "DSK",
+        "cLeaderId": 7
+      },
+      "id": 7
+    }
+  ],
+  "crews": [
+    {
+      "cName": "Cehennem Melekleri",
+      "cCode": "CHM",
+      "cLeaderId": 1,
+      "id": 1
+    },
+    {
+      "cName": "Parlayan Yıldızlar",
+      "cCode": "PLY",
+      "cLeaderId": 2,
+      "id": 2
+    },
+    {
+      "cName": "Dereboyu SK",
+      "cCode": "DSK",
+      "cLeaderId": 7,
+      "id": 3
     }
   ],
   "comments": [
@@ -134,106 +128,222 @@
       "message": "Uygulamadan çok memnun kaldık.",
       "rating": 4,
       "author": {
-        "username": "admin",
+        "username": "Admin",
         "password": "12345",
         "email": "test@gmail.com",
-        "bmodel": {
+        "bike": {
           "name": "Honda",
           "code": "HND"
         },
         "location": "İstanbul",
         "myCrew": {
-          "cName": "ALS",
+          "cName": "Parlayan Yıldızlar",
           "cId": 5,
-          "cLeader": "Test"
+          "cLeader": "Admin"
         },
         "id": 1
       },
       "id": 4
     },
     {
-      "message": "Deneme Mesajidir.",
-      "rating": 4,
+      "message": "Bu bir test yorumudur.",
+      "rating": 2,
       "author": {
-        "username": "Test",
-        "password": "admin",
-        "email": "testuser@example.com",
-        "bmodel": {
-          "name": "Harley Davidson",
-          "code": "HLD"
+        "username": "Admin",
+        "password": "12345",
+        "email": "test@gmail.com",
+        "bike": {
+          "name": "Honda",
+          "code": "HND"
         },
-        "location": "Holland",
+        "location": "İstanbul",
         "myCrew": {
-          "cName": "PPL",
+          "cName": "Parlayan Yıldızlar",
           "cId": 5,
-          "cLeader": "Test"
+          "cLeader": "Admin"
         },
-        "id": 3
+        "id": 1
       },
       "id": 5
-    },
+    }
+  ],
+  "trips": [
     {
-      "message": "CommentTest-Username",
-      "rating": 1,
-      "author": {
-        "username": "Test",
-        "password": "admin",
-        "email": "testuser@example.com",
-        "bmodel": {
-          "name": "Harley Davidson",
-          "code": "HLD"
-        },
-        "location": "Holland",
-        "myCrew": {
-          "cName": "PPL",
-          "cId": 5,
-          "cLeader": "Test"
-        },
-        "id": 3
-      },
-      "id": 6
-    },
-    {
-      "message": "Username succesfull.",
-      "rating": 5,
-      "author": {
-        "username": "admin",
+      "slocation": "Biga",
+      "flocation": "Çanakkale",
+      "sdate": "2020-11-06",
+      "assignee": {
+        "username": "Admin",
         "password": "12345",
         "email": "test@gmail.com",
-        "bmodel": {
+        "bike": {
           "name": "Honda",
           "code": "HND"
         },
         "location": "İstanbul",
         "myCrew": {
-          "cName": "ALS",
+          "cName": "Parlayan Yıldızlar",
           "cId": 5,
           "cLeader": "Test"
         },
         "id": 1
       },
-      "id": 7
+      "participants": [
+        {
+          "username": "Admin",
+          "password": "12345",
+          "email": "test@gmail.com",
+          "bike": {
+            "name": "Honda",
+            "code": "HND"
+          },
+          "location": "İstanbul",
+          "myCrew": {
+            "cName": "Parlayan Yıldızlar",
+            "cId": 5,
+            "cLeader": "Test"
+          },
+          "id": 1
+        },
+        {
+          "username": "Berkcan",
+          "password": "brk123",
+          "email": "berkcan@testuser.com",
+          "bike": {
+            "name": "Harley Davidson",
+            "code": "HLD"
+          },
+          "location": "Bursa",
+          "myCrew": {
+            "cName": "Cehennem Melekleri",
+            "cCode": "CHM",
+            "cLeaderId": 1,
+            "id": 1
+          },
+          "id": 3
+        }
+      ],
+      "id": 1
     },
     {
-      "message": "Long message test-> aaadasdas",
-      "rating": 5,
-      "author": {
-        "username": "admin",
+      "slocation": "Hakkari",
+      "flocation": "Trabzon",
+      "sdate": "2021-01-23",
+      "assignee": {
+        "username": "Admin",
         "password": "12345",
         "email": "test@gmail.com",
-        "bmodel": {
+        "bike": {
           "name": "Honda",
           "code": "HND"
         },
         "location": "İstanbul",
         "myCrew": {
-          "cName": "ALS",
+          "cName": "Parlayan Yıldızlar",
           "cId": 5,
           "cLeader": "Test"
         },
         "id": 1
       },
-      "id": 8
+      "participants": [
+        {
+          "username": "Admin",
+          "password": "12345",
+          "email": "test@gmail.com",
+          "bike": {
+            "name": "Honda",
+            "code": "HND"
+          },
+          "location": "İstanbul",
+          "myCrew": {
+            "cName": "Parlayan Yıldızlar",
+            "cId": 5,
+            "cLeader": "Test"
+          },
+          "id": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "slocation": "Kayseri",
+      "flocation": "Bolu",
+      "sdate": "2020-11-27",
+      "assignee": {
+        "username": "Admin",
+        "password": "12345",
+        "email": "test@gmail.com",
+        "bike": {
+          "name": "Honda",
+          "code": "HND"
+        },
+        "location": "İstanbul",
+        "myCrew": {
+          "cName": "Parlayan Yıldızlar",
+          "cId": 5,
+          "cLeader": "Test"
+        },
+        "id": 1
+      },
+      "participants": [
+        {
+          "username": "Admin",
+          "password": "12345",
+          "email": "test@gmail.com",
+          "bike": {
+            "name": "Honda",
+            "code": "HND"
+          },
+          "location": "İstanbul",
+          "myCrew": {
+            "cName": "Parlayan Yıldızlar",
+            "cId": 5,
+            "cLeader": "Test"
+          },
+          "id": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "slocation": "Van",
+      "flocation": "Bursa",
+      "sdate": "2021-01-01",
+      "assignee": {
+        "username": "Kerem",
+        "password": "krm123",
+        "email": "kerem@testuser.com",
+        "bike": {
+          "name": "Yamaha",
+          "code": "YMH"
+        },
+        "location": "Karabük",
+        "myCrew": {
+          "cName": "Parlayan Yıldızlar",
+          "cCode": "PLY",
+          "cLeaderId": 2
+        },
+        "id": 2
+      },
+      "participants": [
+        {
+          "username": "Kerem",
+          "password": "krm123",
+          "email": "kerem@testuser.com",
+          "bike": {
+            "name": "Yamaha",
+            "code": "YMH"
+          },
+          "location": "Karabük",
+          "myCrew": {
+            "cName": "Parlayan Yıldızlar",
+            "cCode": "PLY",
+            "cLeaderId": 2
+          },
+          "id": 2
+        }
+      ],
+      "id": 4
     }
   ]
 }

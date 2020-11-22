@@ -1,3 +1,5 @@
+import { MytripsComponent } from './pages/mytrips/mytrips.component';
+import { TripsComponent } from './pages/trips/trips.component';
 import { MycrewComponent } from './pages/mycrew/mycrew.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { NgModule } from '@angular/core';
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:'mycrew',component:MycrewComponent, canActivate:[LoginGuard]},
   {path:'register',component:RegisterComponent},
   {path:'dashboard',component:DashboardComponent,canActivate:[LoginGuard]},
-  {path:'',redirectTo:'login',pathMatch:'full'}
+  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'trips',component:TripsComponent, canActivate:[LoginGuard]},
+  {path:'mytrips',component:MytripsComponent}
 ];
 
 @NgModule({

@@ -22,7 +22,7 @@ export class MapsComponent implements OnInit {
   tripform:FormGroup;
   trip:Trip;
   assignee:User;
-  sDate:Date;
+  sdate:Date;
 
   @ViewChild('search')
   public searchElementRef: ElementRef;
@@ -35,7 +35,7 @@ export class MapsComponent implements OnInit {
   ){ }
 
   ngOnInit(): void {
-    this.sDate=new Date();
+    this.sdate=new Date();
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
       this.geoCoder= new google.maps.Geocoder;
@@ -59,7 +59,7 @@ export class MapsComponent implements OnInit {
     this.tripform=this.fb.group({
       slocation:[null,Validators.required],
       flocation:[null,Validators.required],
-      sDate:[null,Validators.required]
+      sdate:[null,Validators.required]
     });
 
     this.dataService.getUsersById(localStorage.getItem("online")).subscribe(data =>

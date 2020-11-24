@@ -1,5 +1,5 @@
 import { MapsComponent } from './pages/maps/maps.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -62,7 +62,7 @@ import { MytripsComponent } from './pages/mytrips/mytrips.component';
     InputTextareaModule,
     CalendarModule
   ],
-  providers: [LoginGuard],
+  providers: [LoginGuard,Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router, ActivatedRoute } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { AccountService } from 'src/app/services/account.service';
 import { DataService } from 'src/app/services/data.service';
@@ -11,6 +11,8 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  title='Login';
 
   kisi:User=null;
   loginForm:FormGroup;

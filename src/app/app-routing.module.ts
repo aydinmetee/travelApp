@@ -10,14 +10,14 @@ import { LoginGuard } from './pages/login/login.guard';
 import { MapsComponent } from './pages/maps/maps.component';
 
 const routes: Routes = [
-  {path:'maps',component: MapsComponent, canActivate:[LoginGuard]},
-  {path:'login',component:LoginComponent},
-  {path:'mycrew',component:MycrewComponent, canActivate:[LoginGuard]},
-  {path:'register',component:RegisterComponent},
-  {path:'dashboard',component:DashboardComponent,canActivate:[LoginGuard]},
+  {path:'maps',component: MapsComponent, canActivate:[LoginGuard],data:{title: 'Maps'}},
+  {path:'login',component:LoginComponent,data:{title:'Login'}},
+  {path:'mycrew',component:MycrewComponent, canActivate:[LoginGuard],data:{title: 'MyCrew'}},
+  {path:'register',component:RegisterComponent,data:{title: 'Register'}},
+  {path:'dashboard',component:DashboardComponent,canActivate:[LoginGuard],data:{title: 'Dashboard'}},
   {path:'',redirectTo:'login',pathMatch:'full'},
-  {path:'trips',component:TripsComponent, canActivate:[LoginGuard]},
-  {path:'mytrips',component:MytripsComponent}
+  {path:'trips',component:TripsComponent, canActivate:[LoginGuard],data:{title: 'Trips'}},
+  {path:'mytrips',component:MytripsComponent,data:{title: 'MyTrips'}}
 ];
 
 @NgModule({

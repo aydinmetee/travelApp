@@ -54,7 +54,7 @@ import { MytripsComponent } from './pages/mytrips/mytrips.component';
     DropdownModule,
     TableModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC1dAOr8AL0DEM-jzkq5VnnMQniMHqF77Y',
+      apiKey: '',
       libraries: ['places']
     }),
     CarouselModule,

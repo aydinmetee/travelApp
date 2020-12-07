@@ -7,6 +7,7 @@
           type="text"
           formControlName="username"
           class="form-control"
+          id="rUsername"
           name="username"
           placeholder="Username"
           required
@@ -18,6 +19,7 @@
           type="password"
           formControlName="password"
           class="form-control"
+          id="rPassword"
           name="password"
           placeholder="Password"
           required
@@ -31,6 +33,7 @@
           formControlName="email"
           class="form-control"
           name="email"
+          id="rEmail"
           placeholder="Email"
           required
         />
@@ -40,6 +43,7 @@
       <div class="form-group">
         <p-dropdown
           [options]="bikes"
+          id="rBike"
           formControlName="bmodel"
           placeholder="Select a Bike"
           optionLabel="name"
@@ -53,6 +57,7 @@
           formControlName="location"
           class="form-control"
           name="location"
+          id="rLocation"
           placeholder="Location"
           required
         />

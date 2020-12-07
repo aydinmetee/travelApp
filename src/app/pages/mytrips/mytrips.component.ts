@@ -11,32 +11,32 @@ import { Component, OnInit } from '@angular/core';
 
 export class MytripsComponent implements OnInit {
 
-  onlineUser:User;
-  trips : Trip[]=[];
-  uId:Number = Number(localStorage.getItem('online'));
+  onlineUser: User = new User();
+  trips: Trip[] = [];
+  uId: Number = Number(localStorage.getItem('online'));
 
-  constructor(private dataService:DataService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
 
-    this.dataService.getUsersById(localStorage.getItem("online")).subscribe(data => {
+    this.dataService.getUsersById(localStorage.getItem('online')).subscribe(data => {
       this.onlineUser = data;
     });
 
     this.dataService.getAllTrips().subscribe(data => {
-      for(var i of data) {
-        if(i.assignee.id == this.uId){
-            this.trips.push(i);
+      for (var i of data) {
+        if (i.assignee.id == this.uId) {
+          this.trips.push(i);
         }
-        else{
-          for(var j of i.participants){
-              if(j.id==this.uId){
-                this.trips.push(i);
-                break;
-              }
+        else {
+          for (var j of i.participants) {
+            if (j.id == this.uId) {
+              this.trips.push(i);
+              break;
+            }
           }
         }
-        
+
       }
     })
 

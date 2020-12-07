@@ -9,4 +9,8 @@ export class User{
     bike:Bike;
     location:String;
     myCrew:Crew=null;
+
+    constructor(){
+        this.myCrew = new Crew;
+    }
 }

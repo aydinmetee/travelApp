@@ -14,8 +14,8 @@ declare let alertify;
 })
 export class MapsComponent implements OnInit {
  
-  lat:number
-  lng:number;
+  latitude:number
+  longitude:number;
   zoom:number;
   address:string;
   private geoCoder;
@@ -49,8 +49,8 @@ export class MapsComponent implements OnInit {
             return;
           }
 
-          this.lat = place.geometry.location.lat();
-          this.lng = place.geometry.location.lng();
+          this.latitude = place.geometry.location.lat();
+          this.longitude = place.geometry.location.lng();
           this.zoom = 12;
         })
       })
@@ -71,8 +71,8 @@ export class MapsComponent implements OnInit {
   private setCurrentLocation(){
     if('geolocation' in navigator){
       navigator.geolocation.getCurrentPosition((position) =>{
-        this.lat = position.coords.latitude;
-        this.lng = position.coords.longitude;
+        this.latitude = position.coords.latitude;
+        this.longitude = position.coords.longitude;
         this.zoom = 15;
       })
     }
@@ -80,9 +80,9 @@ export class MapsComponent implements OnInit {
 
   markerDragEnd($event : any){
     console.log($event);
-    this.lat = $event.coords.lat;
-    this.lng = $event.coords.lng;
-    this.getAddress(this.lat, this.lng);
+    this.latitude = $event.coords.lat;
+    this.longitude = $event.coords.lng;
+    this.getAddress(this.latitude, this.longitude);
 
   }
 

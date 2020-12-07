@@ -17,10 +17,10 @@
               <tbody>
                 <tr *ngFor="let mem of allCrews; index as i">
                   <th scope="row">{{ i + 1 }}</th>
-                  <td>
+                  <td id="joinCrewName">
                     {{ mem.cName }}
                   </td>
-                  <td>{{ mem.cCode }}</td>
+                  <td id="joinCrewCode">{{ mem.cCode }}</td>
                   <td>
                     <button type="button" class="btn btn-success" (click)="join(i)">Join</button>
                   </td>
@@ -59,7 +59,7 @@
 
     
 <div *ngIf="this.onlineUser.myCrew!=null">
-    <h3>My Crew - {{onlineUser.myCrew.cName}} </h3>
+    <h3 id="baslik">{{onlineUser.myCrew.cName}}</h3>
     <table class="table table-striped">
         <thead>
           <tr>

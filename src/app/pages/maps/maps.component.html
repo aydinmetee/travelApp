@@ -1,7 +1,7 @@
 <div class="container">
   <h3 class="text-center">MAP</h3>
 
-<!-- <div class="form-group">
+<div class="form-group">
     <label>Enter address</label>
     <input
       type="text"
@@ -15,9 +15,9 @@
       #search
     />
   </div>
--->
-  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+
+  <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
   </agm-map>
   
   <div class="row">

@@ -13,11 +13,11 @@ declare var alertify;
 })
 export class MycrewComponent implements OnInit {
   cMembers: User[]=[];
-  onlineUser: User;
-  allCrews: Crew[];
+  onlineUser: User= new User;
+  allCrews: Crew[] = [];
 
   createCrew: FormGroup;
-  newCrew: Crew;
+  newCrew: Crew = new Crew;
 
   constructor(private dataService: DataService, private fb: FormBuilder) {}
 

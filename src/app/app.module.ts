@@ -26,6 +26,7 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
 import {CalendarModule} from 'primeng/calendar';
 import { TripsComponent } from './pages/trips/trips.component';
 import { MytripsComponent } from './pages/mytrips/mytrips.component';
+import { AgmDirectionModule } from 'agm-direction';
 
 @NgModule({
   declarations: [	
@@ -57,6 +58,7 @@ import { MytripsComponent } from './pages/mytrips/mytrips.component';
       apiKey: 'AIzaSyByYiQwQbz7Gr_Lga-j35B-8IeOoNl6A-Y',
       libraries: ['places']
     }),
+    AgmDirectionModule,
     CarouselModule,
     RatingModule,
     InputTextareaModule,

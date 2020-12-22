@@ -72,12 +72,7 @@
         "code": "YMH"
       },
       "location": "İstanbul",
-      "myCrew": {
-        "cName": "Dereboyu SK",
-        "cCode": "DSK",
-        "cLeaderId": 7,
-        "id": 3
-      },
+      "myCrew": null,
       "id": 5
     },
     {

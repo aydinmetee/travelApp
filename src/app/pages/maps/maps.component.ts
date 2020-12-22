@@ -14,6 +14,9 @@ declare let alertify;
 })
 export class MapsComponent implements OnInit {
  
+  status:boolean=false;
+  public origin: any;
+  public destination: any;
   latitude:number
   longitude:number;
   zoom:number;
@@ -35,6 +38,8 @@ export class MapsComponent implements OnInit {
   ){ }
 
   ngOnInit(): void {
+    this.getDirection();
+
     this.sdate=new Date();
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
@@ -73,13 +78,13 @@ export class MapsComponent implements OnInit {
       navigator.geolocation.getCurrentPosition((position) =>{
         this.latitude = position.coords.latitude;
         this.longitude = position.coords.longitude;
-        this.zoom = 15;
+        this.zoom = 8;
+        this.getAddress(this.latitude,this.longitude);
       })
     }
   }
 
   markerDragEnd($event : any){
-    console.log($event);
     this.latitude = $event.coords.lat;
     this.longitude = $event.coords.lng;
     this.getAddress(this.latitude, this.longitude);
@@ -87,9 +92,7 @@ export class MapsComponent implements OnInit {
   }
 
   getAddress(latitude, longitude){
-    this.geoCoder.geocode({'location': { lat: latitude, lng:longitude}},(results,status) =>{
-      console.log(results);
-      console.log(status);
+    this.geoCoder.geocode({'location': { lat: latitude, lng:longitude}},(results,status) => {
       if(status === 'OK'){
         if(results[0]){
           this.zoom=12;
@@ -105,8 +108,18 @@ export class MapsComponent implements OnInit {
     })
   }
 
+  async getDirection() {
+    this.origin = { lat: 40.88094470000001, lng: 29.257742 };
+    this.destination = { lat: 40.14671999999999, lng: 26.408587 };
+   
+    // Location within a string
+    // this.origin = 'Taipei Main Station';
+    // this.destination = 'Taiwan Presidential Office';
+  }
+
 
   cTrip(){
+    this.status=true;
     this.trip=Object.assign(this.tripform.value);
     this.trip.assignee=this.assignee;
     this.trip.participants=[]

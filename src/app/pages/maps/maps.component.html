@@ -18,6 +18,14 @@
 
   <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
     <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
+    <div *ngIf="status">
+      <agm-direction 
+      [origin]="origin" 
+      [destination]="destination"
+    >
+    </agm-direction>
+    </div>
+    
   </agm-map>
   
   <div class="row">

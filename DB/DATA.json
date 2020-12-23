@@ -64,8 +64,8 @@
       "id": 4
     },
     {
-      "username": "Ömer",
-      "password": "omr123",
+      "username": "TestUser",
+      "password": "12345",
       "email": "omer@gmail.com",
       "bike": {
         "name": "Yamaha",
@@ -255,6 +255,38 @@
         }
       ],
       "id": 2
+    },
+    {
+      "slocation": "Biga",
+      "flocation": "Ankara",
+      "sdate": "2021-01-19",
+      "assignee": {
+        "username": "TestUser",
+        "password": "12345",
+        "email": "omer@gmail.com",
+        "bike": {
+          "name": "Yamaha",
+          "code": "YMH"
+        },
+        "location": "İstanbul",
+        "myCrew": null,
+        "id": 5
+      },
+      "participants": [
+        {
+          "username": "TestUser",
+          "password": "12345",
+          "email": "omer@gmail.com",
+          "bike": {
+            "name": "Yamaha",
+            "code": "YMH"
+          },
+          "location": "İstanbul",
+          "myCrew": null,
+          "id": 5
+        }
+      ],
+      "id": 3
     }
   ]
 }

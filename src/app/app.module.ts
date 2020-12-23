@@ -55,7 +55,7 @@ import { AgmDirectionModule } from 'agm-direction';
     DropdownModule,
     TableModule,
     AgmCoreModule.forRoot({
-      apiKey: '',
+      apiKey: 'AIzaSyByYiQwQbz7Gr_Lga-j35B-8IeOoNl6A-Y',
       libraries: ['places']
     }),
     AgmDirectionModule,
